@@ -354,7 +354,7 @@ header .container {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    line-height: 2;
+    line-height: 1;
     text-align: center;
     width: 372px;
 }
@@ -362,7 +362,7 @@ header .container {
     font-size:20px;
     font-family: var(--font-raleway);
     font-weight: bold;
-    margin: 34px 0 14px;
+    margin: 34px 0 0;
 }
 .box span {
     font-size: 46px;
@@ -375,6 +375,7 @@ header .container {
 .box li {
     font-size: 14px;
     font-family: var(--font-open-sans);
+    line-height: 3;
 }
 .box button {
     height: 50px;
@@ -393,6 +394,11 @@ header .container {
 }
 .box button:hover {
     color: black;
+}
+.box small {
+    font-size: 12px;
+    font-family: var(--font-raleway);
+    font-weight: bold;
 }
 .box-1 span {
     color: #EB476E;
