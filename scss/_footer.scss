@@ -1,0 +1,31 @@
+footer {
+    background-color: var(--color-light-grey);
+    box-shadow: 0 -5px 40px #00000029;
+    height: 89px;
+}
+footer .container {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .div-left {
+    display: flex;
+    flex-direction: column;
+}
+footer h2 {
+    font-size: 26px;
+    font-family: var(--font-raleway);
+    color: var(--color-primary);
+    font-weight: lighter;
+}
+footer small {
+    font-size: 11px;
+    font-family: var(--font-open-sans);
+    color: var(--color-grey);
+    margin-top: 7px;
+}
+footer a {
+    margin-right: 10px;
+}

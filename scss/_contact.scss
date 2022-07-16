@@ -1,0 +1,123 @@
+.contact .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 59px;
+}
+.contact_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 440px;
+    height: 372px;
+}
+.contact_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.contact_data h2 {
+    font-size: 49px;
+    font-family: var(--font-raleway);
+    margin-top: 45px;
+}
+.contact_data p {
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    margin-top: 22px;
+}
+.contact_data small {
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    color: var(--color-grey);
+}
+.info-small {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 330px;
+    justify-content: space-between;
+}
+
+.contact_form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.input-basic {
+    border-bottom: 1px solid #95989A;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 440px;
+    margin: 15px 0 30px;
+}
+.label-basic {
+    color: var(--color-primary);
+    display:flex;
+    flex-direction: column;
+    font-size: 11px;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    font-size: 12px;
+    color: #707070;
+    font-family: var(--font-open-sans);
+    line-height: 1.3;
+}
+
+.checkbox span {
+    height: 24px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+
+}
+.checkbox input:checked + span {
+    background-image: url("../assets/Checkmark.svg");
+    background-size: 12px 11px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contact button {
+    height: 57px;
+    width: 226px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 35px;
+    color: white;
+    font-size: 13px;
+    position: relative;
+    top: 25px;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    background-color: var(--color-primary);
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+.contact button:hover {
+    color: black;
+}

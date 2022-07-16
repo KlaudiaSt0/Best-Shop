@@ -1,0 +1,144 @@
+.benefits {
+    height: 1395px;
+    background-color: var(--color-light-grey);
+}
+.benefits .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefits .row {
+    display: flex;
+    flex-direction: row;
+    height: 370px;
+    width: 1124px;
+}
+.row:first-of-type {
+    margin-top: 105px;
+}
+.row:nth-of-type(2) {
+    margin: 37px 0;
+}
+.row:last-of-type {
+    margin-bottom: 105px;
+}
+.row-1, .row-2, .article-3 {
+    background-color: var(--color-white);
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+}
+.img-3 {
+    background-color: var(--color-green);
+    border-radius: 5px;
+    border: 1px solid #e8e9ed;
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.img-3 img {
+    height: 207px;
+    width: 295px;
+}
+.row-3 article {
+    width: 623px;
+
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.benefits .img-1, .benefits .img-2 {
+    max-height: 370px;
+    width: auto;
+   padding:20px
+}
+.benefits .img-1 {
+    height: 230px;
+    width: auto;
+    position: relative;
+    top: 110px;
+    right: 120px;
+}
+.img_wrapper-benefits {
+    position: relative;
+}
+.span-1 {
+    height: 160px;
+    width: 160px;
+    border-radius: 41px;
+    position: absolute;
+    background-color: var(--color-redish);
+    top: 90px;
+    left: 90px;
+    transform: rotate(45deg);
+}
+.span-2 {
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--color-primary);
+    top: 10px;
+    left: 90px;
+    transform: rotate(45deg);
+}
+.benefits .img-2 {
+    height: auto;
+    width: 428px;
+    position: relative;
+    top: 40px;
+    left: 100px;
+}
+.benefits article {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.benefits .article-basic {
+    width: 416px;
+    margin: 20px 36px;
+}
+.benefits .article-3 {
+    padding: 20px 36px;
+}
+.benefits h2 {
+    font-family: var(--font-raleway);
+    font-size: 36px;
+    margin: 50px 0 30px;
+    line-height: 1.2;
+}
+.benefits p {
+    font-size: 16px;
+    font-family: var(--font-open-sans);
+    line-height: 1.5;
+}
+
+.benefits .paragraph-1::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-redish);
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+}
+.benefits .paragraph-2::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: 40px;
+    right: 90px;
+}
+.benefits .paragraph-3::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--color-green);
+    position: absolute;
+    bottom: 60px;
+    left: 36px;
+}
