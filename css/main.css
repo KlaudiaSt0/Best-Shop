@@ -556,11 +556,10 @@ header .container {
   }
 }
 .banner {
-  height: 712px;
-  margin-top: 130px;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .banner .container {
@@ -574,6 +573,7 @@ header .container {
   font-family: "Raleway", sans-serif;
   color: #000000;
   margin-bottom: 20px;
+  margin-top: 130px;
 }
 
 .banner p {
@@ -584,7 +584,9 @@ header .container {
 
 .banner a {
   height: 67px;
-  width: 440px;
+  max-width: 440px;
+  width: 27vw;
+  min-width: 300px;
   border-radius: 40px;
   box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.1607843137);
   color: #ffffff;
@@ -606,10 +608,44 @@ header .container {
 .banner img {
   width: 100%;
   height: auto;
+  min-height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
+@media (max-width: 1100px) {
+  .banner h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 700px) {
+  .banner h1 {
+    font-size: 35px;
+    margin-top: 100px;
+  }
+  .banner p {
+    text-align: center;
+    margin: 0 20px;
+    margin-bottom: 38px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 450px) {
+  .banner a {
+    max-width: 300px;
+    width: 70vh;
+    min-width: 200px;
+  }
+  .banner h1 {
+    margin-top: 100px;
+    font-size: 35px;
+  }
+}
 .statistics {
-  height: 531px;
+  display: flex;
+  height: auto;
   font-family: "Raleway", sans-serif;
 }
 
@@ -617,8 +653,8 @@ header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 531px;
-  justify-content: space-between;
+  height: auto;
+  justify-content: center;
 }
 
 .statistics h2 {
@@ -629,6 +665,8 @@ header .container {
 .data_container {
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
   margin-bottom: 121px;
   width: 1352px;
 }
@@ -701,6 +739,76 @@ header .container {
   line-height: 1.2;
 }
 
+@media (min-width: 900px) and (max-width: 1400px) {
+  .data_container {
+    width: 80%;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 750px) and (max-width: 900px) {
+  .data_container {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .statistics h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+@media (min-width: 558px) and (max-width: 750px) {
+  .data_container {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .statistics {
+    display: flex;
+  }
+  .statistics h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 75px 0 100px 0;
+  }
+  .statistics article:nth-child(2) {
+    margin: 0 40px;
+  }
+}
+@media (min-width: 534px) and (max-width: 558px) {
+  .statistics article {
+    margin: 20px 40px;
+  }
+  .data_container {
+    width: 80%;
+    justify-content: space-between;
+  }
+  .statistics h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 75px 0 100px 0;
+  }
+  .statistics article {
+    height: 140px;
+    width: 116px;
+  }
+}
+@media (max-width: 534px) {
+  .statistics article {
+    margin: 20px 40px;
+  }
+  .data_container {
+    width: 80%;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .statistics h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 0 50px 0;
+  }
+  .statistics article {
+    height: 140px;
+    width: 116px;
+  }
+}
 .benefits {
   height: 1395px;
   background-color: #f7f7f7;

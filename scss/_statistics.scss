@@ -1,13 +1,14 @@
 .statistics {
-    height: 531px;
+    display: flex;
+    height: auto;
     font-family: $font-raleway;
 }
 .statistics .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 531px;
-    justify-content: space-between;
+    height: auto;
+    justify-content: center;
 }
 .statistics h2 {
     font-size: 36px;
@@ -16,6 +17,8 @@
 .data_container {
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 121px;
     width: 1352px;
 }
@@ -77,4 +80,80 @@
 .data_container p {
     text-align: center;
     line-height: 1.2;
+}
+@media (min-width:900px) and (max-width: 1400px) {
+    .data_container {
+        width: 80%;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 900px) {
+    .data_container {
+        width: 80%;
+        justify-content: space-between;
+    }
+    .statistics h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 558px) and (max-width: 750px) {
+    .data_container {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .statistics {
+        display: flex;
+    }
+    .statistics h2 {
+        text-align: center;
+        font-size: 30px;
+        margin: 75px 0 100px 0;
+    }
+    .statistics article:nth-child(2) {
+        margin: 0 40px;
+    }
+}
+@media (min-width: 534px) and (max-width: 558px) {
+
+    .statistics article {
+        margin: 20px 40px;
+    }
+    .data_container {
+        width: 80%;
+        justify-content: space-between;
+    }
+    .statistics h2 {
+        text-align: center;
+        font-size: 30px;
+        margin: 75px 0 100px 0;
+
+    }
+    .statistics article {
+        height: 140px;
+        width: 116px;
+    }
+}
+@media (max-width: 534px) {
+    .statistics article {
+        margin: 20px 40px;
+    }
+    .data_container {
+        width: 80%;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .statistics h2 {
+        text-align: center;
+        font-size: 30px;
+        margin: 50px 0 50px 0;
+
+    }
+    .statistics article {
+        height: 140px;
+        width: 116px;
+    }
 }
