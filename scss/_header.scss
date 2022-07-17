@@ -1,22 +1,28 @@
-.container {
-    width: 1352px;
-    margin: 0 auto;
-}
+
 header {
     box-shadow: 0px 3px 6px #00000029;
+
 }
 header .container {
     display: flex;
     justify-content: space-between;
     height: 70px;
     align-items: center;
+    background-color: white;
+
 }
 .logo {
     font-size: 32px;
-    font-family: var(--font-raleway);
+    font-family: $font-raleway;
     font-weight: lighter;
     text-decoration: none;
-    color: var(--color-primary);
+    color: $color-primary;
+    padding-left: 15px;
+    background-color: white;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
 }
 .nav_list {
     display: flex;
@@ -28,16 +34,94 @@ header .container {
     display: flex;
     align-items: center;
     padding: 0 10px;
-    color: var(--color-grey);
+    color: $color-grey;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 11px;
-    font-family: var(--font-open-sans);
+    font-family: $font-open-sans;
     font-weight: bold;
     height: 70px;
     cursor: pointer;
 }
 .nav_element:hover {
-    color: var(--color-black);
-    border-bottom: 4px solid var(--color-primary);
+    color: $color-black;
+    border-bottom: 4px solid $color-primary;
+}
+.burger {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    display: none;
+    z-index: 3;
+    strong {
+        position: absolute;
+        left: -9999999px;
+    }
+    span {
+        width: 20px;
+        height: 2px;
+        background-color: $color-primary;
+        display: block;
+
+    }
+}
+@media (min-width: 1120px) and (max-width: 1400px) {
+    .nav_list {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1120px) {
+    .nav_list {
+        width: 55vw;
+    }
+}
+@media (min-width: 200px) and (max-width: 700px) {
+
+    .nav_list {
+        position: absolute;
+        flex-direction: column;
+        top: 70px;
+        left: 0;
+        height: 170px;
+        width: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        box-shadow: 0px 3px 6px #00000029;
+        z-index: 2;
+        transform: translate(0, -150%);
+        transition: 0.2s;
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 20%, white 80%);
+    }
+    .nav_element {
+        justify-content: flex-start;
+        height: 30px;
+        padding: 20px 30px;
+        letter-spacing: 3px;
+
+        &:hover {
+            border: none;
+        }
+    }
+body.menu-open .nav_list {
+    transform: translate(0);
+}
+
+
+    .burger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+
+    }
+
+
 }

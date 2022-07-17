@@ -6,7 +6,7 @@
 }
 .pricing h2 {
     margin: 100px 0 71px;
-    font-family: var(--font-raleway);
+    font-family: $font-raleway;
     font-size: 36px;
 }
 .pricing .boxes_wrapper {
@@ -30,13 +30,13 @@
 }
 .box h3 {
     font-size:20px;
-    font-family: var(--font-raleway);
+    font-family: $font-raleway;
     font-weight: bold;
     margin: 34px 0 0;
 }
 .box span {
     font-size: 46px;
-    font-family: var(--font-open-sans);
+    font-family: $font-open-sans;
     font-weight: lighter;
 }
 .box ul {
@@ -44,7 +44,7 @@
 }
 .box li {
     font-size: 14px;
-    font-family: var(--font-open-sans);
+    font-family: $font-open-sans;
     line-height: 3;
 }
 .box button {
@@ -59,7 +59,7 @@
     font-size: 13px;
     position: relative;
     top: 25px;
-    font-family: var(--font-open-sans);
+    font-family: $font-open-sans;
     font-weight: bold;
 }
 .box button:hover {
@@ -67,38 +67,39 @@
 }
 .box small {
     font-size: 12px;
-    font-family: var(--font-raleway);
+    font-family: $font-raleway;
     font-weight: bold;
 }
 .box-1 span {
     color: #EB476E;
 }
 .box-1 {
-    border: 1px solid var(--color-redish);
+    border: 1px solid $color-redish;
 }
 .box-1 button {
     background-color: #EB476E;
 }
 .box-2 span {
-    color: var(--color-primary);
+    color: $color-primary;
 }
 .pricing .box-2 {
     border: 1px solid #07ACE6;
     box-shadow: 5px 10px 27px #07ACE629;
     height: 500px;
+    margin: 0 58px;
 }
 .box-2 button {
-    background-color: var(--color-primary);
+    background-color: $color-primary;
     box-shadow: 5px 10px 14px #07ACE629;
 }
 .box-3 span {
-    color: var(--color-green);
+    color: $color-green;
 }
 .box-3 {
-    border: 1px solid var(--color-green);
+    border: 1px solid $color-green;
 }
 .box-3 button {
-    background-color: var(--color-green);
+    background-color: $color-green;
 }
 .element-checked::before {
     content: "";

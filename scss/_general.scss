@@ -1,15 +1,23 @@
 * {
     box-sizing: border-box;
 }
-:root {
-    --color-primary: #08A6E4;
-    --color-primary-shadow: rgba(7, 172, 230, .16);
-    --color-redish: #fb3b64;
-    --color-green: #55dfb4;
-    --color-black: #000000;
-    --color-grey: #a5a5a5;
-    --color-light-grey: #f7f7f7;
-    --color-white: #ffffff;
-    --font-raleway: "Raleway", sans-serif;
-    --font-open-sans: "Open Sans", sans-serif;
-}
+    $color-primary: #08A6E4;
+    $color-primary-shadow: rgba(7, 172, 230, .16);
+    $color-redish: #fb3b64;
+    $color-green: #55dfb4;
+    $color-black: #000000;
+    $color-grey: #a5a5a5;
+    $color-light-grey: #f7f7f7;
+    $color-white: #ffffff;
+    $font-raleway: "Raleway", sans-serif;
+    $font-open-sans: "Open Sans", sans-serif;
+    $desktop-width: 1352px;
+
+    .container {
+        width: $desktop-width;
+        margin: 0 auto;
+        @media(max-width: $desktop-width) {
+            width: 100%;
+            padding: 0 15px;
+        }
+    }

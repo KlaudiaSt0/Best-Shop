@@ -12,13 +12,13 @@
 }
 .banner h1 {
     font-size: 49px;
-    font-family: var(--font-raleway);
-    color: var(--color-black);
+    font-family: $font-raleway;
+    color: $color-black;
     margin-bottom: 20px;
 }
 .banner p {
     font-size: 16px;
-    font-family: var(--font-open-sans);
+    font-family: $font-open-sans;;
     margin-bottom: 38px;
 }
 .banner a {
@@ -26,10 +26,10 @@
     width: 440px;
     border-radius: 40px;
     box-shadow: 5px 10px 14px #07ACE629;
-    color: var(--color-white);
-    font-family: var(--font-open-sans);
+    color: $color-white;
+    font-family: $font-open-sans;
     font-size: 16px;
-    background-color: var(--color-primary);
+    background-color: $color-primary;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,7 +38,7 @@
     cursor: pointer;
 }
 .banner a:hover {
-    color: var(--color-black);
+    color: $color-black;
 }
 .banner img {
     width: 100%;
