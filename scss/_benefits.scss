@@ -12,6 +12,7 @@
     flex-direction: row;
     height: 370px;
     width: 1124px;
+    min-width: 300px;
 }
 .row:first-of-type {
     margin-top: 105px;
@@ -38,6 +39,7 @@
     position: relative;
 }
 .img-3 img {
+    position: relative;
     height: 207px;
     width: 295px;
 }
@@ -55,7 +57,9 @@
    padding:20px
 }
 .benefits .img-1 {
-    height: 230px;
+    max-height: 230px;
+    height: 20vw;
+    min-height: 110px;
     width: auto;
     position: relative;
     top: 110px;
@@ -65,18 +69,28 @@
     position: relative;
 }
 .span-1 {
-    height: 160px;
-    width: 160px;
+    display: inline-block;
+    max-height: 160px;
+    height: 20vw;
+    min-height: 127.5px;
+    max-width: 160px;
+    width: 20vw;
+    min-width: 127.5px;
     border-radius: 41px;
     position: absolute;
     background-color: $color-redish;
     top: 90px;
     left: 90px;
     transform: rotate(45deg);
+    transition: 2s;
+
 }
 .span-2 {
-    height: 320px;
-    width: 320px;
+    display: block;
+    max-height: 320px;
+    max-width: 320px;
+    height: 20vw;
+    width: 20vw;
     border-radius: 50%;
     position: absolute;
     background-color: $color-primary;
@@ -86,7 +100,9 @@
 }
 .benefits .img-2 {
     height: auto;
-    width: 428px;
+    max-width: 428px;
+    width: 30vw;
+    min-width: 215px;
     position: relative;
     top: 40px;
     left: 100px;
@@ -113,6 +129,7 @@
     font-size: 16px;
     font-family: $font-open-sans;
     line-height: 1.5;
+
 }
 
 .benefits .paragraph-1::after {
@@ -123,6 +140,7 @@
     position: absolute;
     bottom: 60px;
     left: 0;
+    transition: 2s;
 }
 .benefits .paragraph-2::after {
     content: "";
@@ -132,6 +150,7 @@
     position: absolute;
     bottom: 40px;
     right: 90px;
+    transition: 2s;
 }
 .benefits .paragraph-3::after {
     content: "";
@@ -141,4 +160,121 @@
     position: absolute;
     bottom: 60px;
     left: 36px;
+    transition: 2s;
+}
+
+@media (max-width: 1300px) {
+    .benefits .row {
+    width: 90%;
+}
+}
+@media (max-width: 1150px) {
+  .row-1 .img_wrapper-benefits {
+
+    .img-1 {
+
+
+    }
+  }
+    .row-2 .img_wrapper-benefits {
+       margin-right: 60px;
+    }
+    .benefits .paragraph-2::after {
+       width: 0;
+        transition: 2s;
+    }
+    .benefits .paragraph-1::after {
+        width: 0;
+        transition: 2s;
+    }
+    .benefits .paragraph-3::after {
+        width: 0;
+        transition: 2s;
+    }
+    .span-1 {
+        height: 28%;
+        width: 28%;
+       margin: 40px;
+       top: 50px;
+        left: 50px;
+        transition: 2s;
+    }
+
+}
+@media (max-width: 700px) {
+
+    .row:first-of-type {
+        margin-top: 50px;
+    }
+    .benefits .row-1, .benefits .row-2 {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .benefits .row-3 {
+        flex-direction: column;
+        .img-3 {
+            width: 100%;
+          img {
+            bottom: -25px;
+              left: -15px;
+          }
+        }
+    }
+    .benefits .article-3 {
+        justify-content: space-evenly;
+        width: 100%;
+        min-height: 280px;
+        padding: 15px;
+        h2 {
+            margin: 15px 0;
+            font-size: 30px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .benefits .article-basic {
+        justify-content: space-evenly;
+        width: 80%;
+        p {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 30px;
+            margin: 15px 0;
+        }
+    }
+    .benefits .img_wrapper-benefits {
+        margin-top: 0;
+        .benefits .img-1 {
+            position: relative;
+            top: -100px;
+            padding: 0;
+            width: 50%;
+            min-width: 192px;
+            margin: 0;
+
+        }
+
+        .benefits .span-1 {
+            position: absolute;
+
+        }
+        .benefits .img-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            width: 50%;
+            min-width: 192px;
+            margin: 0;
+        }
+
+        .benefits .span-2 {
+            position: absolute;
+height: 30vw;
+            width: 30vw;
+        }
+    }
 }

@@ -16,6 +16,7 @@
     margin-bottom: 80px;
     align-items: center;
     justify-content: space-evenly;
+    gap: 8vw;
 }
 .pricing .box {
     height: 461px;
@@ -26,7 +27,9 @@
     justify-content: space-between;
     line-height: 1;
     text-align: center;
+    max-width: 372px;
     width: 372px;
+    min-width: 240px;
 }
 .box h3 {
     font-size:20px;
@@ -86,7 +89,7 @@
     border: 1px solid #07ACE6;
     box-shadow: 5px 10px 27px #07ACE629;
     height: 500px;
-    margin: 0 58px;
+
 }
 .box-2 button {
     background-color: $color-primary;
@@ -116,4 +119,43 @@
     height: 11px;
     width: 11px;
     margin-right: 10px;
+}
+@media (max-width: 1150px) {
+.pricing .boxes_wrapper {
+    gap: 5vw;
+}
+}
+@media (max-width: 600px) {
+    .pricing h2 {
+        margin: 50px 0 15px;
+    }
+    .pricing .boxes_wrapper {
+
+        flex-direction: column;
+        gap: 50px;
+    }
+    .pricing .box {
+        height: 250px;
+        flex-wrap: wrap;
+        align-items: stretch;
+
+        position: relative;
+    }
+    .pricing button {
+        position: absolute;
+        top: 225px;
+        left: 110px;
+
+    }
+    .pricing li {
+        line-height: 3;
+    }
+}
+@media (max-width: 450px) {
+    .pricing .container .box {
+        width: 85vw;
+    }
+    .pricing img.img-2 {
+        padding: 0;
+    }
 }

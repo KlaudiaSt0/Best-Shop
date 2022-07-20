@@ -121,3 +121,37 @@
 .contact button:hover {
     color: black;
 }
+@media (max-width: 900px) {
+    .contact .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_box {
+        height: auto;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width: 600px) {
+    .contact .container {
+        margin: 0;
+    }
+    .contact label, .contact input {
+        width: 90vw;
+        max-width: 440px;
+    }
+}
+@media (max-width: 450px) {
+    .contact h2 {
+        margin: 0;
+    }
+    .contact .info-small {
+        width: 70vw;
+        display: inline-grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+    .contact_box {
+        width: 85vw;
+    }
+}
